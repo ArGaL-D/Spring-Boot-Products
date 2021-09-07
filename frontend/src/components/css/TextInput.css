@@ -1,0 +1,45 @@
+.input-container{
+    width: 50%;
+    height: clamp(1em, 7vh, 3.5em);
+    position: relative;
+}
+
+.text-input{
+    width : 100%;
+    height: inherit;
+    
+    color : #d6dbdf;
+    outline: none;    
+    background: none;
+
+    border: 2px solid #aeb6bf;    
+    border-radius: 5px;
+    padding-left: .5em;
+    z-index: 100;
+
+    transition: 400ms ease-in-out;
+}
+
+.text-label{
+    position: absolute;
+    left: 0;
+    top: -25%;
+    padding: 0 3px;
+    margin-left: 1em;
+
+    color:#aeb6bf;
+    background: #ebedef;
+    transition: 400ms ease-in-out;
+}
+
+/* Animation */
+.text-input:hover ~ .text-label,
+.text-input:valid ~ .text-label{
+    color:rgb(0, 132, 255);  
+}
+
+.text-input:hover,
+.text-input:valid{
+    color:#232a38;
+    border: 2px solid #232a38;  
+}

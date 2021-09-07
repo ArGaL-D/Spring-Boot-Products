@@ -1,0 +1,51 @@
+.product-table {
+    width : 100%;
+    height: 100%;
+    border-collapse: collapse;
+    background:  #f0f3f3;
+}
+
+/* Column name*/
+.product-table th{
+    padding: 1em;
+    text-align: center;
+
+    color: lightskyblue;
+    background: #232a38;
+    position: sticky;
+    
+    top: 0em;    
+}
+
+
+/* Row content */
+.product-table td{
+    padding: 1em;
+    text-align: center;
+}
+
+/* Row */
+
+.product-table tr{
+    color: #0f1218;
+    transition: 100ms ease-in;
+}
+
+.product-table tr:nth-child(even){
+    color: white;
+    background-color:#232a38;    
+}
+
+
+.product-table tr:hover{
+    cursor: pointer;
+    color:#0f1218;
+    background: rgb(87, 143, 226);
+    box-shadow: -1px -1px 5px 1px rgba(17, 17, 17, 0.54);
+}
+
+/* Radio Button - Select all */
+.select-all{
+    border: 4px solid tomato;
+    background: tomato;
+}

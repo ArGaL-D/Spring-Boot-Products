@@ -1,0 +1,29 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+
+.App{
+    width : 100vw;
+    height: 100vh;
+
+    color : white;
+    background: #ebedef;
+
+    overflow: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.table-container{
+    width: 90%;
+    height: 80%;
+
+    display: flex;
+    justify-content: center;    
+    overflow: auto;
+
+    margin-top: 2em;
+}

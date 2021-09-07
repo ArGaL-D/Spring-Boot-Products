@@ -1,0 +1,18 @@
+.container-options {
+    width : 90%;
+    margin: 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.container-options a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .container-options {
+        justify-content: left;
+    }
+}
