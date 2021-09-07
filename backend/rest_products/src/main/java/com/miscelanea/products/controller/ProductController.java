@@ -38,12 +38,10 @@ public class ProductController {
     }
 
     // DELETE
-    /*
-    @DeleteMapping("products")
-    public void deleteProductsById(@RequestBody List<Long> product_IDs) {
+    @DeleteMapping("products/{product_IDs}")
+    public void deleteProductById(@PathVariable List<Long> product_IDs) {
         productService.deleteProductsById(product_IDs);
     }
-    */
 
     /*
     @DeleteMapping("product/{id}")
@@ -51,9 +49,4 @@ public class ProductController {
         System.out.println(product_ID);
     }
     */
-
-    @DeleteMapping("products/{product_IDs}")
-    public void deleteProductById(@PathVariable List<Long> product_IDs) {
-        System.out.println(product_IDs);
-    }
 }

@@ -70,7 +70,7 @@ function ProductTable() {
                     <th>Precio</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="tbody-rows">
                 {
                     product_list.map((value,index)=> {
                         return (
